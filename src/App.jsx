@@ -37,7 +37,8 @@ class App extends Component {
 			alert('Since May 29 of 2017 is necessary proven authorization from user to use Web API of Spotify. You will be redirected to do so.')
 			const client_id = '9ad25b9292504311b9f8521a85c092a6';
 			const response_type = 'token';
-			const redirect_uri = 'http://localhost:3000/';
+			const redirect_uri = 
+'https://gerson4g.github.io/musicmaster/';
 			const state = this.getCookie('CSRF-TOKEN');
 			const URL = `https://accounts.spotify.com/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&
 								response_type=${response_type}&state=${state}`;
